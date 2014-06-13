@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyMathLib", "MyMathLib\MyMathLib.vcxproj", "{C7183D76-375E-45D0-802C-063AE1DA6F27}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyMathLibTest", "MyMathLibTest\MyMathLibTest.vcxproj", "{BDFA5B93-5687-4763-96A0-9A428B76B4C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7183D76-375E-45D0-802C-063AE1DA6F27}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C7183D76-375E-45D0-802C-063AE1DA6F27}.Debug|Win32.Build.0 = Debug|Win32
+		{C7183D76-375E-45D0-802C-063AE1DA6F27}.Release|Win32.ActiveCfg = Release|Win32
+		{C7183D76-375E-45D0-802C-063AE1DA6F27}.Release|Win32.Build.0 = Release|Win32
+		{BDFA5B93-5687-4763-96A0-9A428B76B4C3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BDFA5B93-5687-4763-96A0-9A428B76B4C3}.Debug|Win32.Build.0 = Debug|Win32
+		{BDFA5B93-5687-4763-96A0-9A428B76B4C3}.Release|Win32.ActiveCfg = Release|Win32
+		{BDFA5B93-5687-4763-96A0-9A428B76B4C3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
