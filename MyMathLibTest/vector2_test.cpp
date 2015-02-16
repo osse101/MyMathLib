@@ -111,8 +111,8 @@ TEST_F(Vector2Test, Vector_Multiply){
 	EXPECT_FLOAT_EQ(0.0f, testVectResult.y);
 
 	testVectResult = testVect1 * testVect2;
-	EXPECT_FLOAT_EQ(-testVect2.x, testVectResult.x);
-	EXPECT_FLOAT_EQ(-testVect2.y, testVectResult.y);
+	EXPECT_FLOAT_EQ(testVect1.x*testVect2.x, testVectResult.x);
+	EXPECT_FLOAT_EQ(testVect1.y*testVect2.y, testVectResult.y);
 
 	testVectResult = testVect2 * testVect3;
 	EXPECT_FLOAT_EQ(testVect2.x * testVect3.x, testVectResult.x);
@@ -126,13 +126,9 @@ TEST_F(Vector2Test, Vector_Multiply){
 }
 
 TEST_F(Vector2Test, Vector_Divide){
-	testVectResult = testVect1 / testVect1;
+	testVectResult = testVect1 / testVect2;
 	EXPECT_FLOAT_EQ(0.0f, testVectResult.x);
 	EXPECT_FLOAT_EQ(0.0f, testVectResult.y);
-
-	testVectResult = testVect1 / testVect2;
-	EXPECT_FLOAT_EQ(-testVect2.x, testVectResult.x);
-	EXPECT_FLOAT_EQ(-testVect2.y, testVectResult.y);
 
 	testVectResult = testVect2 / testVect3;
 	EXPECT_FLOAT_EQ(testVect2.x / testVect3.x, testVectResult.x);
@@ -140,8 +136,8 @@ TEST_F(Vector2Test, Vector_Divide){
 
 	//Divide by 0
 	testVectResult = testVect2 / testVect1;
-	EXPECT_FLOAT_EQ(testVect2.x / testVect3.x, testVectResult.x);
-	EXPECT_FLOAT_EQ(testVect2.y / testVect3.y, testVectResult.y);
+	EXPECT_FLOAT_EQ(testVect2.x / testVect1.x, testVectResult.x);
+	EXPECT_FLOAT_EQ(testVect2.y / testVect1.y, testVectResult.y);
 	
 	// can't overflow
 	// can't underflow

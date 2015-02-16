@@ -7,10 +7,10 @@
 #if _MSC_VER >= 1700
 #pragma comment(lib, "gtestx64.lib")
 #pragma comment(lib, "gtestdx64.lib")
-//#pragma comment(lib, "gtest_mainx64.lib")
-//#pragma comment(lib, "gtest_maindx64.lib")
+
 #elif _MSC_VER >= 1600
 #pragma comment(lib, "gtestdx86.lib")
+
 #endif
 
 
